@@ -1,0 +1,28 @@
+# Dependencies
+/vendor/
+
+# Testing
+/coverage/
+/coverage-html/
+/.phpunit.cache/
+/phpunit.xml
+/coverage.xml
+/coverage.txt
+/infection.log
+
+# IDE
+/.idea/
+/.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Cache
+/.php-cs-fixer.cache
