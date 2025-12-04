@@ -9,7 +9,7 @@ use ModernCart\Contracts\Store;
 /**
  * Session-based cart storage
  */
-final readonly class SessionStore implements Store
+final class SessionStore implements Store
 {
     public function __construct(
         private string $prefix = 'cart_'

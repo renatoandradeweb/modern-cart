@@ -7,7 +7,7 @@ use ModernCart\Contracts\Store;
 /**
  * Cookie-based cart storage
  */
-final readonly class CookieStore implements Store
+final class CookieStore implements Store
 {
     public function __construct(
         private string $prefix = 'cart_',

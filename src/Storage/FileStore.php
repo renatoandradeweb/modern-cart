@@ -8,7 +8,7 @@ use ModernCart\Exceptions\CartException;
 /**
  * File-based cart storage
  */
-final readonly class FileStore implements Store
+final class FileStore implements Store
 {
     public function __construct(
         private string $storagePath,
