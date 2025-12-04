@@ -299,6 +299,11 @@ final class Cart implements Arrayable
 
             $data = @unserialize($state);
 
+            // Se os dados estão vazios ou não são um array válido, ignora
+            if (empty($data) || !is_array($data) || !isset($data['id'])) {
+                return $this;
+            }
+
             $this->validateRestoredData($data);
             $this->restoreFromData($data);
             $this->isDirty = false;
